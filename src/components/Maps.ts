@@ -10,7 +10,7 @@ import {
     IPreThing as IMapsCreatrPreThing,
     IPreThingsContainers,
 } from "mapscreatr";
-import { IMapScreenr } from "mapscreenr";
+import { IMapScreenr as baseIMapScreener } from "mapscreenr";
 
 import { FullScreenPokemon } from "../FullScreenPokemon";
 
@@ -23,7 +23,7 @@ import { IAreaGate, IAreaSpawner, IPlayer, IThing } from "./Things";
 /**
  * A flexible container for map attributes and viewport.
  */
-export interface IMapScreenr extends IMapScreenr {
+export interface IMapScreenr extends baseIMapScreener {
     /**
      * Which are the player is currently active in.
      *
